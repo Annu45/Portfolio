@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annu Mathur — Portfolio</title>
+  <!-- Load Poppins font used in style.css -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- REPLACE your current <header id="header"> ... </header> with this block -->
+<header id="header">
+  <div class="header-bar">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <img src="icons/logo.png" class="logo" alt="Annu Mathur logo">
+      </a>
+
+      <nav class="topnav" aria-label="Primary navigation">
+        <ul id="primaryNav" class="nav-links">
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">👤 About</a></li>
+          <li><a href="#skills">💻 Skills</a></li>
+          <li><a href="#education">🎓 Education</a></li>
+          <li><a href="#projects">📁 Project</a></li>
+          <li><a href="#experience">💼 Experience</a></li>
+          <li><a href="#achievements">📜 Certification</a></li>
+          <li><a href="#contact">✉️ Contact</a></li>
+        </ul>
+
+        <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- thin accent boundary under the header (matches the design you supplied) -->
+  <div class="header-accent"></div>
+
+  <!-- Keep the hero section that was originally under header intact.
+       If your original placed the hero inside <header>, keep it here unchanged.
+       (Below is the same hero wrapper you had previously; replace only if different.) -->
+ <main class="hero-center">
+  <section id="home" class="hero" aria-label="Home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-greeting">Hi There,<br>I'm <span class="hero-first">Annu</span> <span class="hero-last">Mathur</span></h1>
+          <p class="hero-sub">I am into Frontend Development</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="Annu_BCSE008_Resume _.pdf" download>About Me</a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a class="social-link" href="https://www.linkedin.com/in/annu-mathur-045463288" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="icons/link1.png" alt="">
+            </a>
+            <a class="social-link" href="https://github.com/Annu45" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="icons/github2.png" alt="">
+            </a>
+            <a class="social-link" href="https://leetcode.com/u/annumathur003/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+              <img src="icons/leetcode2.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="false">
+          <div class="profile-wrap">
+            <div class="profile-shape" aria-hidden="true"></div>
+            <img src="icons/background.png" alt="Annu Mathur" class="profile-img" width="300" height="300">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</header>
+
+  <main class="main-content">
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <div class="about-hero">
+        
+           
+
+            <ul class="about-list">
+              <li>I am a B.Tech CSE student at NIT Srinagar with experience in building web applications and backend systems using Java, Spring Boot, and REST APIs.</li>
+              <li>I enjoy creating practical tools with Python, like resume analyzers, and building interactive web projects using HTML, CSS, and JavaScript.</li>
+              <li>I have solved 300+ DSA problems and focus on writing clean, maintainable, and scalable code.</li>
+            </ul>
+
+            <div class="info-row">
+              <div class="info-card">🎂 Age: 20</div>
+              <div class="info-card">📞 Phone: +91 6006969953</div>
+              <div class="info-card">✉️ Email: annumathur003@gmail.com</div>
+              <div class="info-card">📍 Location: Hathras ,UP</div>
+            </div>
+
+            <div class="about-ctas">
+              <a class="btn btn-primary" href="Annu_BCSE008_Resume _.pdf" download>Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-panel">
+      <div class="grid projects-grid">
+        <article class="card">
+          <h3>AI-Powered ATS Resume Analyzer & Job Fit Chatbot</h3>
+          <p>Built an ATS resume analysis and feedback system that extracts skills, scores job fit, and suggests improvements.</p>
+          <ul class="project-list">
+            <li>Semantic skill extraction and resume scoring using transformer-based NLP.</li>
+            <li>Interactive chatbot for job-fit conversations (Streamlit frontend, FastAPI backend).</li>
+            <li>Improved candidate-job matching accuracy in early tests.</li>
+          </ul>
+          <div class="tech-badges">
+            <span class="badge">Python</span>
+            <span class="badge">LangChain</span>
+            <span class="badge">Transformers</span>
+            <span class="badge">FastAPI</span>
+          </div>
+          <p class="muted">Repository & demo: <a class="link" href="https://github.com/Annu45/resume_analyzer">GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Random Image Generator</h3>
+          <p>Spring Boot web app that fetches and serves random images through a REST API with Swagger documentation.</p>
+          <ul class="project-list">
+            <li>Designed REST endpoints and MVC structure for easy extension.</li>
+            <li>Added Swagger docs for API discoverability and testing.</li>
+          </ul>
+          <div class="tech-badges">
+            <span class="badge">Java</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">Swagger</span>
+          </div>
+          <p class="muted">Source: <a class="link" href="https://github.com/Annu45/Random_Image_Generator.git">GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio Website (this site)</h3>
+          <p>This portfolio — a responsive, accessible personal site built with HTML, CSS, and a small JavaScript helper for navigation. It showcases projects, skills, education, and contact information.</p>
+          <ul class="project-list">
+            <li>Responsive layout using CSS Grid and Flexbox.</li>
+            <li>Custom components: timeline, skill cards, and education panels.</li>
+            <li>Simple, fast — designed for clarity and easy updates.</li>
+          </ul>
+          <div class="tech-badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <p class="muted">Source: <a class="link" href="https://github.com/Annu45/simpleportfolio">GitHub</a></p>
+        </article>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Abilities</h2>
+  <div class="skills-panel">
+  <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/java.png" alt="Java">
+          </div>
+          <div class="skill-name">Java</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/c++.png" alt="C++">
+          </div>
+          <div class="skill-name">C++</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/c.png" alt="C">
+          </div>
+          <div class="skill-name">C</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/python.png" alt="Python">
+          </div>
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/js.png" alt="JavaScript">
+          </div>
+          <div class="skill-name">JavaScript</div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/springboot.png" alt="Spring Boot">
+          </div>
+          <div class="skill-name">Spring Boot</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/restapi.png" alt="REST APIs">
+          </div>
+          <div class="skill-name">REST APIs</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/swagger.png" alt="Swagger">
+          </div>
+          <div class="skill-name">Swagger</div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/html.png" alt="HTML">
+          </div>
+          <div class="skill-name">HTML</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/css.png" alt="CSS">
+          </div>
+          <div class="skill-name">CSS</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/bootstrap.png" alt="Bootstrap">
+          </div>
+          <div class="skill-name">Bootstrap</div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/mysql.png" alt="MySQL">
+          </div>
+          <div class="skill-name">MySQL</div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/git.png" alt="Git">
+          </div>
+          <div class="skill-name">Git</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/github.png" alt="GitHub">
+          </div>
+          <div class="skill-name">GitHub</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/intelij.png" alt="IntelliJ">
+          </div>
+          <div class="skill-name">IntelliJ</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/vscode.png" alt="VS Code">
+          </div>
+          <div class="skill-name">VS Code</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-logo">
+            <img src="icons/postman.png" alt="Postman">
+          </div>
+          <div class="skill-name">Postman</div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card edu nit">
+        <h3>National Institute of Technology Srinagar</h3>
+        <p><strong>2023 — 2027</strong></p>
+        <p>Bachelor of Technology in Computer Science</p>
+        <p>Hazratbal, Srinagar, Jammu and Kashmir 190006</p>
+      </div>
+
+      <div class="card edu school">
+        <h3>Seksaria Sushila Devi Public School</h3>
+        <p><strong>2022 — 2023</strong></p>
+        <p>12th Class with PCM</p>
+        <p>Hathras, Uttar Pradesh</p>
+      </div>
+
+      <div class="card edu school">
+        <h3>Seksaria Sushila Devi Public School</h3>
+        <p><strong>2020 — 2021</strong></p>
+        <p>10th Class</p>
+        <p>Hathras, Uttar Pradesh</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <!-- Internship positions -->
+        <div class="timeline-item right">
+          <div class="card-timeline">
+            <h3>Intern — C-DAC Noida (MEITY)</h3>
+            <p class="muted">Jan 2025 — Mar 2025</p>
+            <h4>Ethical Hacking and Penetration Testing</h4>
+            <ul>
+              <li>Completed training on ethical hacking and penetration testing under C-DAC, Noida (Ministry of Electronics &amp; IT).</li>
+              <li>Conducted vulnerability scanning and basic penetration tests on web applications and Linux systems.</li>
+              <li>Prepared reports of findings and recommendations during training exercises.</li>
+            </ul>
+            <p><a class="link" href="https://drive.google.com/file/d/1EIXyvn6SCRwYOBrFpNUOJmIaZ7FlIk4n/view?usp=drivesdk">Certificate</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements & Certifications</h2>
+      <div class="certs-panel">
+        <div class="certs-grid">
+          <article class="cert-card">
+            <div class="cert-thumb">
+              <img src="icons/dsawithjava.png" alt="DSA with Java">
+            </div>
+            <div class="cert-body">
+              <h3>DSA with Java — Apna College</h3>
+              <p class="muted"><a class="link" href="https://drive.google.com/file/d/1XKpw9DGs5zahjQTT5VNUaCYtGMwWhYg9/view?usp=drivesdk">Certificate</a></p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-thumb">
+              <img src="icons/fullstack.png" alt="Full-Stack Development">
+            </div>
+            <div class="cert-body">
+              <h3>Full-Stack Development — Apna College</h3>
+              <p class="muted"><a class="link" href="https://drive.google.com/file/d/1rQrZd5TaFLgtJKrbgLQgWFt1RXPftgiB/view?usp=drivesdk">Certificate</a></p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-thumb">
+              <img src="icons/hackerrank.png" alt="HackerRank Java">
+            </div>
+            <div class="cert-body">
+              <h3>Java (Basics) — HackerRank</h3>
+              <p class="muted"><a class="link" href="https://www.hackerrank.com/certificates/iframe/18938f831440">Certificate</a></p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-thumb">
+              <img src="icons/leetcode.png" alt="LeetCode">
+            </div>
+            <div class="cert-body">
+              <h3>Solved 190+ problems</h3>
+              <p class="muted">100-Day Badge | Contest Rating: 1687 (Top 12%) — <a class="link" href="https://leetcode.com/u/annumathur003/">Profile</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <!-- REPLACE your current contact section with this block -->
+<section id="contact" class="section contact-section">
+  <div class="contact-outer container">
+    <h2 class="contact-title"><span class="contact-icon">🎧</span> Get In <span class="accent-purple">Touch</span></h2>
+
+    <div class="contact-card">
+      <!-- left: illustration (place a suitable illustration at icons/contact-illustration.png) -->
+      <div class="contact-illustration">
+        <img src="icons/touch.png" alt="Contact illustration">
+      </div>
+
+      <!-- right: contact form (keeps same IDs: cf-name, cf-email, cf-message, contactForm) -->
+      <div class="contact-form-panel">
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="cf-name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="cf-email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="cf-message" name="message" rows="8" required></textarea>
+
+          <button type="submit" class="btn btn-submit">Submit ✈</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer-compact">
+  <div class="footer-grid">
+    <!-- Column 1: About -->
+    <div class="footer-col">
+      <h3>Annu's Portfolio</h3>
+      <p>Welcome to my portfolio! Let's connect and build great things together.</p>
+      <p class="muted">Keep Rising 🚀</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#about">👤 About</a></li>
+        <li><a href="#skills">💻 Skills</a></li>
+        <li><a href="#education">🎓 Education</a></li>
+        <li><a href="#projects">📁 Projects</a></li>
+        <li><a href="#experience">💼 Experience</a></li>
+        <li><a href="#achievements">📜 Certification</a></li>
+        <li><a href="#contact">✉️ Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact & Socials -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <ul class="contact-info">
+        <li>📞 +91 6006969953</li>
+        <li>✉️ <a href="mailto:annumathur003@gmail.com">annumathur003@gmail.com</a></li>
+        <li>📍 Hathras, India — 204101</li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/annu-mathur-045463288"><img src="icons/linkdein.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Annu45"><img src="icons/github.png" alt="GitHub"></a>
+        <a href="mailto:annumathur003@gmail.com"><img src="icons/mail.png" alt="Email"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Annu Mathur — Built with ❤️</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
