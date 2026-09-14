@@ -86,4 +86,3 @@ Runs on `http://localhost:5173`.
 | Database  | MongoDB Atlas |
 | Backend   | Render (Web Service) |
 | Frontend  | Render (Static Site) |
-
