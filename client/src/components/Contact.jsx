@@ -65,7 +65,7 @@ export default function Contact() {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" rows="5" placeholder="Your message..." value={form.message} onChange={handleChange} required></textarea>
             </div>
-            <p className="form-note">Sent straight to my inbox via my own Express + MongoDB API.</p>
+           
             <button type="submit" className="btn btn-primary" disabled={sending}>
               {sending ? 'Sending…' : 'Send Message'}
             </button>
