@@ -45,7 +45,7 @@ export default function Hero() {
             </svg>
             <div className="portrait-img">
               
-                  <img src="/profile.jpg" alt="Annu Mathur" />
+                  <img src="profile.png" alt="Annu Mathur" />
               
             </div>
           </div>

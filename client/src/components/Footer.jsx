@@ -4,7 +4,6 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-photo">
           <div className="inner">
-            {/* Same swap as the hero: put profile.jpg in client/public/ then use <img src="/profile.jpg" alt="Annu Mathur" /> */}
             <span className="mono">AM</span>
           </div>
         </div>
